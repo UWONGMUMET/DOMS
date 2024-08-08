@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.budget-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.budget-section, .expense-section {
+  margin-bottom: 20px;
+}
+
+input {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 8px 0;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.hide {
+  display: none;
+}
+
+.expense-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expense-list li {
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button.edit, button.delete {
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.edit:hover {
+  background-color: #0056b3;
+}
+
+button.delete {
+  background-color: #dc3545;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
