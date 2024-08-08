@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1e1e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 2em 3.5em rgba(0, 9, 50, 0.2);
+}
+
+.app-title {
+    color: #333333;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    padding: 0.75em;
+    font-size: 1em;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+button {
+    font-size: 1em;
+    padding: 0.75em 1em;
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 1em;
+    border-radius: 0.5em;
+    transition: 0.3s;
+    display: none;
+}
+
+p span{
+    font-weight: 500;
+    font-style: italic;
+}
+
+.success {
+    background-color: #28a745;
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+.error {
+    background-color: #dc3545;
+    display: block;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
