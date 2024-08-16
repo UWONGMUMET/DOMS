@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #f0f0f5;
+    background-image: linear-gradient(45deg, #c7c7c7 25%, transparent 25%), 
+                      linear-gradient(-45deg, #c7c7c7 25%, transparent 25%),
+                      linear-gradient(45deg, transparent 75%, #c7c7c7 75%),
+                      linear-gradient(-45deg, transparent 75%, #c7c7c7 75%);
+    background-size: 40px 40px;
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+.container {
+    width: 360px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#card {
+    position: relative;
+    width: 100%;
+    padding: 25px 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 3px solid #333;
+    background-color: #fff;
+}
+
+#card img {
+    display: block;
+    width: 200px;
+    max-height: 220px;
+    position: relative;
+    margin: 10px auto;
+}
+
+.hp {
+    width: 90px;
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 20px;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 14px;
+    border: 2px solid #333;
+}
+
+.poke-name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0 30px 0;
+}
+
+.types span {
+    padding: 7px 25px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+}
+
+.stats div {
+    width: 30%;
+}
+
+.stats h3 {
+    color: #444;
+    font-size: 18px;
+}
+
+.stats p {
+    color: #666;
+    font-size: 14px;
+}
+
+#btn {
+    display: block;
+    padding: 12px 50px;
+    font-size: 18px;
+    background-color: #222;
+    color: #ffffff;
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #555;
+}
